@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas Relacionales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Tabla Clientes -->
+    <div class="table-container">
+        <h2>Tabla de Clientes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id Cliente</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                    <th>Dirección</th>
+                </tr>
+            </thead>
+                <!-- Datos de los Clientes -->
+                <tr>
+                    <td>1</td>
+                    <td>Juan</td>
+                    <td>Pérez</td>
+                    <td>juan@email.com</td>
+                    <td>555-1234</td>
+                    <td>Calle Falsa 123, CDMX</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ana</td>
+                    <td>López</td>
+                    <td>ana@email.com</td>
+                    <td>555-5678</td>
+                    <td>Av. Reforma 456, Guadalajara</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Carlos</td>
+                    <td>Gómez</td>
+                    <td>carlos@email.com</td>
+                    <td>555-7890</td>
+                    <td>Calle 7, Monterrey</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Laura</td>
+                    <td>Ramírez</td>
+                    <td>laura@email.com</td>
+                    <td>555-2468</td>
+                    <td>Calle Independencia, León</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Pedro</td>
+                    <td>Martínez</td>
+                    <td>pedro@email.com</td>
+                    <td>555-8520</td>
+                    <td>Calle Real 34, Mérida</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Isabel</td>
+                    <td>Rodríguez</td>
+                    <td>isabel@email.com</td>
+                    <td>555-1357</td>
+                    <td>Calle Bosque 56, Tijuana</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>José</td>
+                    <td>Sánchez</td>
+                    <td>jose@email.com</td>
+                    <td>555-1111</td>
+                    <td>Av. 20 de Noviembre 78, Puebla</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Patricia</td>
+                    <td>Gómez</td>
+                    <td>patricia@email.com</td>
+                    <td>555-9876</td>
+                    <td>Calle Jalisco 89, Oaxaca</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Tabla Pedidos -->
+    <div class="table-container">
+        <h2>Tabla de Pedidos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id Pedido</th>
+                    <th>Id Cliente</th>
+                    <th>Id Proveedor</th>
+                    <th>Fecha Pedido</th>
+                    <th>Monto Total</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Datos de los Pedidos -->
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2024-01-18</td>
+                    <td>150.00</td>
+                    <td>Enviado</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>2024-02-25</td>
+                    <td>220.50</td>
+                    <td>En proceso</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2024-03-10</td>
+                    <td>180.00</td>
+                    <td>Cancelado</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>2024-04-12</td>
+                    <td>350.75</td>
+                    <td>Completado</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2024-05-30</td>
+                    <td>400.00</td>
+                    <td>Enviado</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2024-06-15</td>
+                    <td>99.99</td>
+                    <td>En proceso</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>1</td>
+                    <td>2024-07-05</td>
+                    <td>500.00</td>
+                    <td>Completado</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>2024-08-01</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>2024-08-01</td>
+                    <td>650.00</td>
+                    <td>Enviado</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>2024-01-20</td>
+                    <td>120.00</td>
+                    <td>Cancelado</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>2024-02-28</td>
+                    <td>250.00</td>
+                    <td>Completado</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>2024-03-15</td>
+                    <td>300.00</td>
+                    <td>Enviado</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>2024-04-25</td>
+                    <td>420.25</td>
+                    <td>En proceso</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>2024-05-10</td>
+                    <td>560.00</td>
+                    <td>Completado</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>2024-06-18</td>
+                    <td>320.00</td>
+                    <td>Enviado</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>7</td>
+                    <td>3</td>
+                    <td>2024-07-10</td>
+                    <td>270.00</td>
+                    <td>En proceso</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Tabla Proveedores -->
+    <div class="table-container">
+        <h2>Tabla de Proveedores</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id Proveedor</th>
+                    <th>Nombre Proveedor</th>
+                    <th>Contacto</th>
+                    <th>Teléfono</th>
+                    <th>Dirección</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Datos de los Proveedores -->
+                <tr>
+                    <td>1</td>
+                    <td>Proveedor A</td>
+                    <td>Juan Pérez</td>
+                    <td>555-1001</td>
+                    <td>Calle Falsa 123, CDMX</td>
+                </tr>
+                <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas Relacionales - Diseño</title>
+</head>
+<body>
+    <div class="table-container">
+        <h2>Tabla de Clientes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id Cliente</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                    <th>Dirección</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Juan</td>
+                    <td>Pérez</td>
+                    <td>juan@email.com</td>
+                    <td>555-1234</td>
+                    <td>Calle Falsa 123, CDMX</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ana</td>
+                    <td>López</td>
+                    <td>ana@email.com</td>
+                    <td>555-5678</td>
+                    <td>Av. Reforma 456, Guadalajara</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Carlos</td>
+                    <td>Gómez</td>
+                    <td>carlos@email.com</td>
+                    <td>555-7890</td>
+                    <td>Calle 7, Monterrey</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Laura</td>
+                    <td>Ramírez</td>
+                    <td>laura@email.com</td>
+                    <td>555-2468</td>
+                    <td>Calle Independencia, León</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Pedro</td>
+                    <td>Martínez</td>
+                    <td>pedro@email.com</td>
+                    <td>555-8520</td>
+                    <td>Calle Real 34, Mérida</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Isabel</td>
+                    <td>Rodríguez</td>
+                    <td>isabel@email.com</td>
+                    <td>555-1357</td>
+                    <td>Calle Bosque 56, Tijuana</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>José</td>
+                    <td>Sánchez</td>
+                    <td>jose@email.com</td>
+                    <td>555-1111</td>
+                    <td>Av. 20 de Noviembre 78, Puebla</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Patricia</td>
+                    <td>Gómez</td>
+                    <td>patricia@email.com</td>
+                    <td>555-9876</td>
+                    <td>Calle Jalisco 89, Oaxaca</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <style>
+    /* Diseño general del body */
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+    
+    /* Títulos generales */
+    h1, h2 {
+        text-align: center;
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    /* Contenedor de las tablas */
+    .table-container {
+        margin: 20px;
+        width: 80%;
+        max-width: 1000px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        overflow-x: auto;
+    }
+    
+    /* Estilos para las tablas */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 16px;
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    /* Encabezados de la tabla */
+    table th {
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        padding: 12px 15px;
+        font-weight: bold;
+    }
+    
+    /* Estilos para celdas */
+    table td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+        font-size: 14px;
+    }
+    
+    /* Fila cuando se pasa el ratón por encima */
+    table tr:hover {
+        background-color: #f1f1f1;
+    }
+    
+    /* Alternar el color de las filas */
+    table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    
+    /* Bordes de la tabla */
+    table th, table td {
+        border-right: 1px solid #ddd;
+    }
+    
+    table td:last-child, table th:last-child {
+        border-right: none;
+    }
+    
+    /* Estilo para la tabla Proveedores */
+    table .table-proveedor {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+    }
+    
+    /* Diseño de celdas en las tablas */
+    table td {
+        background-color: #f9f9f9;
+        color: #555;
+    }
+    
+    /* Efecto cuando el mouse pasa por encima de las filas */
+    table tr:hover {
+        background-color: #f1f1f1;
+    }
+    
+    /* Bordes de las celdas */
+    table td, table th {
+        border-bottom: 1px solid #ddd;
+    }
+    
+    /* Ajustar las celdas de texto */
+    table th {
+        padding: 15px 20px;
+    }
+    
+    /* Dar estilo a las tablas cuando el ratón pasa sobre las filas */
+    table tr:hover {
+        background-color: #f9f9f9;
+        cursor: pointer;
+    }
+    
+    /* Estilos de la tabla de clientes */
+    .table-clientes {
+        background-color: #fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Estilos para las tablas */
+    table th, td {
+        padding: 12px 15px;
+    }
+    
+    /* Ajuste de celdas de la tabla */
+    table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    
+    table td:last-child {
+        text-align: center;
+    }
+    
+    /* Tablas de Proveedores */
+    .table-proveedor th {
+        font-size: 18px;
+        color: white;
+        padding: 10px;
+        background-color: #28a745;
+    }
+    
+    table td {
+        padding: 15px 20px;
+        text-align: center;
+        background-color: #f9f9f9;
+    }
+    
+    /* Diseños para las filas */
+    table td:hover {
+        background-color: #f1f1f1;
+    }
+    
+    /* Estilo para tablas con líneas bordadas */
+    table th, table td {
+        border-bottom: 1px solid #ddd;
+    }
+    
+    /* Tablas con bordes más resaltados */
+    table td:first-child {
+        font-weight: bold;
+    }
+    
+                            /* Diseño general del body */
+    body{
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+    
+    /* Títulos generales */
+    h1, h2 {
+        text-align: center;
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    /* Contenedor de las tablas */
+    .table-container {
+        margin: 20px;
+        width: 80%;
+        max-width: 1000px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        overflow-x: auto;
+    }
+    
+    /* Estilos para las tablas */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 16px;
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    /* Encabezados de la tabla */
+    table th {
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        padding: 12px 15px;
+        font-weight: bold;
+    }
+    
+    /* Estilos para celdas */
+    table td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+        font-size: 14px;
+    }
+    
+    /* Fila cuando se pasa el ratón por encima */
+    table tr:hover {
+        background-color: #f1f1f1;
+    }
+    
+    /* Alternar el color de las filas */
+    table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    
+    /* Bordes de la tabla */
+    table th, table td {
+        border-right: 1px solid #ddd;
+    }
+    
+    table td:last-child, table th:last-child {
+        border-right: none;
+    }
+    
+    /* Estilo para la tabla Proveedores */
+    table .table-proveedor {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+    }
+    
+    /* Diseño de celdas en las tablas */
+    table td {
+        background-color: #f9f9f9;
+        color: #555;
+    }
+    
+    /* Efecto cuando el mouse pasa por encima de las filas */
+    table tr:hover {
+        background-color: #f1f1f1;
+    }
+    
+    /* Bordes de las celdas */
+    table td, table th {
+        border-bottom: 1px solid #ddd;
+    }
+    
+    /* Ajustar las celdas de texto */
+    table th {
+        padding: 15px 20px;
+    }
+    
+    /* Dar estilo a las tablas cuando el ratón pasa sobre las filas */
+    table tr:hover {
+        background-color: #f9f9f9;
+        cursor: pointer;
+    }
+    
+    /* Estilos de la tabla de clientes */
+    .table-clientes {
+        background-color: #fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Estilos para las tablas */
+    table th, td {
+        padding: 12px 15px;
+    }
+    
+    /* Ajuste de celdas de la tabla */
+    table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    
+    table td:last-child {
+        text-align: center;
+    }
+    
+    /* Tablas de Proveedores */
+    .table-proveedor th {
+        font-size: 18px;
+        color: white;
+        padding: 10px;
+        background-color: #28a745;
+    }
+    
+    table td {
+        padding: 15px 20px;
+        text-align: center;
+        background-color: #f9f9f9;
+    }
+    
+    /* Diseños para las filas */
+    table td:hover {
+        background-color: #f1f1f1;
+    }
+    
+    /* Estilo para tablas con líneas bordadas */
+    table th, table td {
+        border-bottom: 1px solid #ddd;
+    }
+    
+    /* Tablas con bordes más resaltados */
+    table td:first-child {
+        font-weight: bold;
+    }
